@@ -54,6 +54,7 @@ public class Find extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jCheckBox5 = new javax.swing.JCheckBox();
+        jCheckBox6 = new javax.swing.JCheckBox();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Find");
@@ -82,6 +83,8 @@ public class Find extends javax.swing.JFrame {
 
         jCheckBox5.setText("jCheckBox5");
 
+        jCheckBox6.setText("jCheckBox6");
+
         org.jdesktop.layout.GroupLayout layout = new org.jdesktop.layout.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -101,7 +104,10 @@ public class Find extends javax.swing.JFrame {
                                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                                 .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
                                     .add(jCheckBox2)
-                                    .add(jCheckBox4)))))
+                                    .add(jCheckBox4)
+                                    .add(layout.createSequentialGroup()
+                                        .add(17, 17, 17)
+                                        .add(jCheckBox6))))))
                     .add(layout.createSequentialGroup()
                         .add(jCheckBox5)
                         .add(0, 0, Short.MAX_VALUE)))
@@ -126,7 +132,9 @@ public class Find extends javax.swing.JFrame {
                             .add(jCheckBox1)
                             .add(jCheckBox2))
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(jCheckBox5)
+                        .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                            .add(jCheckBox5)
+                            .add(jCheckBox6))
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                         .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                             .add(jCheckBox3)
@@ -181,6 +189,7 @@ System.out.println("salaaaaaam");
     private javax.swing.JCheckBox jCheckBox3;
     private javax.swing.JCheckBox jCheckBox4;
     private javax.swing.JCheckBox jCheckBox5;
+    private javax.swing.JCheckBox jCheckBox6;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
